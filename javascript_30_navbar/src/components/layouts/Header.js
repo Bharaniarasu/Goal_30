@@ -1,4 +1,4 @@
-import "./header.scss";
+// import "./header.scss";
 import React from "react";
 import logo_img from "../../assets/AlternativeTo Logo.svg";
 import spence_icon from "../../assets/Spense_Icon.svg";
