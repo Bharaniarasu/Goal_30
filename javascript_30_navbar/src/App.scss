@@ -1,4 +1,20 @@
 .App__container {
   margin: auto;
-  padding: 0 5rem;
+  padding: 0 10rem;
+}
+
+@media screen and (max-width: 992px) {
+  .App__container {
+    padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .App__container {
+    padding: 0 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .App__container {
+    padding: 0 1rem;
+  }
 }

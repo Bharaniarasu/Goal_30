@@ -3,15 +3,21 @@
   justify-content: space-between;
   height: 70px;
   align-items: center;
+  padding: 1.5rem 10rem;
+  background: #ede7e0;
   &__brand {
     color: grey;
 
     &__container {
       display: flex;
+      text-decoration: none;
+      color: grey;
+      align-items: center;
       img {
-        padding: 0 10px;
+        // padding: 0 10px;
       }
       h4 {
+        padding: 0 10px;
       }
     }
   }
@@ -26,6 +32,8 @@
     justify-content: space-between;
     align-items: center;
     width: 75%;
+    background: #ede7e0;
+
     &__links {
       display: flex;
       gap: 2rem;
@@ -55,15 +63,24 @@
             padding: 0;
             width: 300px;
             padding: 1rem;
-            color: rgb(138, 138, 167);
             background: #fff;
             border-radius: 1rem;
             margin-top: 1rem;
-            &__list {
+            &__close_btn {
+              display: none;
+            }
+            &__list > .dropdown_link {
               display: grid;
               grid-template-columns: 10% 90%;
               gap: 1rem;
               padding: 10px;
+              border-radius: 1rem;
+              text-decoration: none;
+              color: rgb(138, 138, 167);
+
+              &:hover {
+                background-color: #ede7e0;
+              }
               h5 {
                 margin: 0;
               }
@@ -79,14 +96,35 @@
   &__buttons {
     display: flex;
     flex-wrap: nowrap;
+    padding: 1rem;
     .btn {
       text-wrap: nowrap;
+      cursor: pointer;
+    }
+    &__sign_in {
+      background: none;
+      color: grey;
+      &:hover {
+        border: 1px solid grey;
+        background-color: grey;
+        color: #fff;
+      }
+    }
+    &__try {
+      background: rgb(16, 74, 16);
+      &:hover {
+        border: 1px solid rgb(16, 74, 16);
+        background-color: transparent;
+        color: rgb(16, 74, 16);
+      }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .nav {
+    padding: 1rem 5rem;
+    position: relative;
     &__menu.show {
       display: flex;
     }
@@ -105,12 +143,43 @@
         width: 100%;
 
         &__item {
-          border-top: 1px solid grey;
+          // border-top: 1px solid grey;
+          padding: 0;
         }
       }
     }
     &__icons {
       display: flex;
     }
+  }
+  .dropdown {
+    &__menu {
+      display: none;
+      position: relative !important;
+      width: auto !important;
+      margin: 1rem;
+      &__close_btn {
+        display: block !important;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+      }
+      &__list {
+        gap: 0 !important;
+      }
+    }
+    &__menu.hide {
+      display: none !important;
+    }
+  }
+}
+@media screen and (max-width: 786px) {
+  .nav {
+    padding: 0.5rem 2rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav {
+    padding: 0.5rem 1rem;
   }
 }

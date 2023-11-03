@@ -1,0 +1,23 @@
+.clients {
+  padding-top: 3rem;
+  p {
+    text-align: center;
+    padding: 10px 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 882px) {
+  .clients {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 200px;
+      }
+    }
+  }
+}

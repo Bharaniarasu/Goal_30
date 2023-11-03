@@ -1,5 +1,14 @@
 :root {
 }
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: grey;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff9d2d;
+  border-radius: 1rem;
+}
 body {
   font-family: sans-serif;
   background: #ede7e0;
@@ -8,7 +17,7 @@ body {
 .btn {
   padding: 1rem;
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: 3x;
   color: #fff;
   background-color: grey;
   margin: 10px;
