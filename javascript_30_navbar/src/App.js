@@ -6,8 +6,8 @@ import Nav from "./components/layouts/Nav";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Header/> */}
-      <Nav />
+      <Header />
+      {/* <Nav /> */}
       <div className="App__container">
         <Routes>{/* <Route path="/" element={<Header />} /> */}</Routes>
       </div>

@@ -1,99 +1,116 @@
 .nav {
   display: flex;
   justify-content: space-between;
+  height: 70px;
   align-items: center;
-  padding: 5px;
   &__brand {
-    &__logo {
-      text-decoration: none;
-      color: grey;
-      &__container {
-        display: flex;
-        img {
-          padding: 5px;
-        }
-        h3 {
-          padding: 5px 10px;
-        }
+    color: grey;
+
+    &__container {
+      display: flex;
+      img {
+        padding: 0 10px;
+      }
+      h4 {
       }
     }
   }
-  &__nav_links {
-    &__list_items {
+  &__icons {
+    display: none;
+    font-size: 2rem;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    &__links {
       display: flex;
-      padding: 5px;
-      &__list_item {
-        list-style: none;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      &__item {
         padding: 1rem;
-        font-size: 14px;
-        color: rgb(105, 105, 105);
-        text-wrap: nowrap;
-      }
-      .dropdown {
-        position: relative;
-        &__menu {
-          display: none;
-          position: absolute;
-          list-style: none;
-          background: #fff;
-          width: 300px;
-          padding: 1.5rem;
-          // margin-top: 1rem;
-          border-radius: 1rem;
-          &__item {
-            padding: 10px 0;
-            &__container {
+        &:hover {
+          .dropdown {
+            &__menu {
+              display: block;
+            }
+          }
+        }
+        &__link {
+          text-decoration: none;
+          font-size: 0.8rem;
+          color: grey;
+          text-wrap: nowrap;
+        }
+        .dropdown {
+          position: relative;
+          &__menu {
+            display: none;
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            width: 300px;
+            padding: 1rem;
+            color: rgb(138, 138, 167);
+            background: #fff;
+            border-radius: 1rem;
+            margin-top: 1rem;
+            &__list {
               display: grid;
               grid-template-columns: 10% 90%;
-              align-items: start;
-              &__icon {
-                padding-top: 3px;
+              gap: 1rem;
+              padding: 10px;
+              h5 {
+                margin: 0;
               }
-              &__content {
-                h4 {
-                  margin: 5px 0;
-                }
-                p {
-                  margin-top: 0;
-                }
+              small {
+                font-size: 0.7rem;
               }
             }
           }
         }
-        &:hover {
-          .dropdown__menu {
-            display: block;
-          }
-        }
       }
     }
   }
-  &__nav_buttons {
+  &__buttons {
     display: flex;
-    padding: 5px;
-    justify-content: space-around;
-    text-wrap: nowrap;
-    &__sign_in {
-      color: grey;
-      background: none;
-    }
-    &__try_it {
-      background: green;
+    flex-wrap: nowrap;
+    .btn {
+      text-wrap: nowrap;
     }
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .nav {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    &__nav_links {
-      width: 100%;
+    &__menu.show {
+      display: flex;
     }
-    .nav__nav_links__list_items {
-      // width: 100%;
+    &__menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
       flex-direction: column;
+      // text-align: center;
+      width: 100%;
+      &__links {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+
+        &__item {
+          border-top: 1px solid grey;
+        }
+      }
+    }
+    &__icons {
+      display: flex;
     }
   }
 }
