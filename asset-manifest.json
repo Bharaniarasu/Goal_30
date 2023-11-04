@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.35dc02e1.css",
+    "main.js": "/static/js/main.ce838db9.js",
+    "static/js/787.418c3afc.chunk.js": "/static/js/787.418c3afc.chunk.js",
+    "static/media/Hero Image.png": "/static/media/Hero Image.06223ac206496e01e5e6.png",
+    "static/media/AlternativeTo Logo.svg": "/static/media/AlternativeTo Logo.7f874c630a1428352cb9cd4e56b1db63.svg",
+    "static/media/Spotify Logo.svg": "/static/media/Spotify Logo.4b391b85bdb55bb8c11fad4ba18a4c16.svg",
+    "static/media/Logo.svg": "/static/media/Logo.f3ef66095c938b927d925d4f1c9f581f.svg",
+    "static/media/Walmart Logo.svg": "/static/media/Walmart Logo.95c12f7a0d2c7e8091a0ff7d85162f53.svg",
+    "static/media/Shopify Logo.svg": "/static/media/Shopify Logo.1dcd0dc173105a55eb5971c9fa96c222.svg",
+    "static/media/Netflix Logo.svg": "/static/media/Netflix Logo.6366facd20bf5a0882050c28aaec7e4d.svg",
+    "static/media/Spense_Icon.svg": "/static/media/Spense_Icon.19a878593c41973d439c58465d6fa188.svg",
+    "static/media/Gradie_Icon.svg": "/static/media/Gradie_Icon.bfed378c4def071393299ee0dfb808b9.svg",
+    "static/media/Fiber_Icon.svg": "/static/media/Fiber_Icon.406edfc9038a183a0e88b7a3d57fadf5.svg",
+    "index.html": "/index.html",
+    "static/media/Capterra Logo.svg": "/static/media/Capterra Logo.9a6e352cdf0ba71369592254b14b4c3a.svg",
+    "main.35dc02e1.css.map": "/static/css/main.35dc02e1.css.map",
+    "main.ce838db9.js.map": "/static/js/main.ce838db9.js.map",
+    "787.418c3afc.chunk.js.map": "/static/js/787.418c3afc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35dc02e1.css",
+    "static/js/main.ce838db9.js"
+  ]
+}
